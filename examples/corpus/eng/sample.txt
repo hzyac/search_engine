@@ -1,0 +1,2 @@
+Search engines index documents. Search engines support queries.
+Mars exploration uses spacecraft. Astronomy studies stars and planets.

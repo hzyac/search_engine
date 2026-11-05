@@ -1,0 +1,6 @@
+/build*/
+CMakeUserPresets.json
+*.o
+*.a
+*.so
+*.log

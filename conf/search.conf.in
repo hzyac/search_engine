@@ -1,0 +1,12 @@
+# Generated build-tree example configuration. Paths resolve from this file.
+jieba_dir @SEARCH_JIEBA_RESOURCE_DIR@
+stop_words_eng @PROJECT_SOURCE_DIR@/resources/stop_words_eng.txt
+stop_words_zh @PROJECT_SOURCE_DIR@/resources/stop_words_zh.txt
+corpus_eng @PROJECT_SOURCE_DIR@/examples/corpus/eng
+corpus_zh @PROJECT_SOURCE_DIR@/examples/corpus/zh
+corpus_web @PROJECT_SOURCE_DIR@/examples/corpus/web
+data_dir @PROJECT_BINARY_DIR@/data
+host 127.0.0.1
+port 8888
+threads 4
+queue_size 64

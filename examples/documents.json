@@ -1,0 +1,14 @@
+[
+    {
+        "id": "article-001",
+        "title": "木星探测新进展",
+        "url": "https://example.org/jupiter",
+        "content": "木星探测任务研究木星的大气和卫星，探测器向地球传回观测数据。"
+    },
+    {
+        "id": "article-002",
+        "title": "Online document indexing",
+        "url": "https://example.org/indexing",
+        "content": "A search engine imports documents and builds an index while continuing to serve queries."
+    }
+]
