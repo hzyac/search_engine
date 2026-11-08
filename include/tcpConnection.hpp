@@ -1,6 +1,5 @@
 // TcpConnection.hpp
-#ifndef SEARCH_ENGINE_TCP_CONNECTION_HPP
-#define SEARCH_ENGINE_TCP_CONNECTION_HPP
+#pragma once
 
 #include "socketIO.hpp"
 #include "socket.hpp"
@@ -71,5 +70,3 @@ private:
     // 断开连接
     tcpConnectionCallback _onClose;
 };
-
-#endif

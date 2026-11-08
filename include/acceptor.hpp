@@ -1,6 +1,5 @@
 // Acceptor.hpp
-#ifndef SEARCH_ENGINE_ACCEPTOR_HPP
-#define SEARCH_ENGINE_ACCEPTOR_HPP
+#pragma once
 
 #include "socket.hpp"
 #include "inetAddress.hpp"
@@ -34,5 +33,3 @@ private:
     // 地址对象, 封装配置地址和端口
     InetAddress _addr;
 };
-
-#endif

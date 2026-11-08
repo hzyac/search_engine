@@ -1,6 +1,5 @@
 // EchoServer.hpp
-#ifndef SEARCH_ENGINE_ECHO_SERVER_HPP
-#define SEARCH_ENGINE_ECHO_SERVER_HPP
+#pragma once
 
 #include "eventLoop.hpp"
 #include "threadPool.hpp"
@@ -28,5 +27,3 @@ private:
     TcpServer _server;
 
 };
-
-#endif

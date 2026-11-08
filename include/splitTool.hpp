@@ -1,6 +1,5 @@
 // SplitTool.hpp
-#ifndef SEARCH_ENGINE_SPLIT_TOOL_HPP
-#define SEARCH_ENGINE_SPLIT_TOOL_HPP
+#pragma once
 
 #include <vector>
 #include <string>
@@ -16,5 +15,3 @@ public:
 private:
 
 };
-
-#endif

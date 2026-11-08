@@ -1,6 +1,5 @@
 // inetaddress.hpp
-#ifndef SEARCH_ENGINE_INET_ADDRESS_HPP
-#define SEARCH_ENGINE_INET_ADDRESS_HPP
+#pragma once
 
 #include <arpa/inet.h>
 #include <string>
@@ -23,5 +22,3 @@ public:
 private:
     struct sockaddr_in _addr;
 };
-
-#endif

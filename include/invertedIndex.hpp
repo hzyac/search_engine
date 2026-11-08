@@ -1,6 +1,5 @@
 // InvertedIndex.hpp
-#ifndef SEARCH_ENGINE_INVERTED_INDEX_HPP
-#define SEARCH_ENGINE_INVERTED_INDEX_HPP
+#pragma once
 
 #include <string>
 #include <map>
@@ -45,5 +44,3 @@ private:
     // 倒排索引数据结构
     map<string, set<pair<int, double>>> _invertedIndex;
 };
-
-#endif

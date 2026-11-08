@@ -1,6 +1,5 @@
 // MyTask.hpp
-#ifndef SEARCH_ENGINE_MY_TASK_HPP
-#define SEARCH_ENGINE_MY_TASK_HPP
+#pragma once
  
 #include "tcpConnection.hpp"
 #include "dataCenter.hpp"
@@ -84,5 +83,3 @@ private:
         }
     };
 };
-
-#endif

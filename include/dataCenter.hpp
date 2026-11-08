@@ -1,6 +1,5 @@
 // DataCenter.hpp
-#ifndef SEARCH_ENGINE_DATA_CENTER_HPP
-#define SEARCH_ENGINE_DATA_CENTER_HPP
+#pragma once
 
 #include <vector>
 #include <map>
@@ -40,5 +39,3 @@ private:
     static DataCenter *_pInstance;
     static std::once_flag _onceFlag;
 };
-
-#endif

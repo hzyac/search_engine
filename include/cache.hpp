@@ -1,6 +1,5 @@
 // Cache.hpp
-#ifndef SEARCH_ENGINE_CACHE_HPP
-#define SEARCH_ENGINE_CACHE_HPP
+#pragma once
 
 #include <string>
 #include <list>
@@ -47,5 +46,3 @@ private:
     size_t _capacity;
     map<long long, pair<string, string>> _pendingDataMap;
 };
-
-#endif

@@ -1,6 +1,5 @@
 // ThreadPool.hpp
-#ifndef SEARCH_ENGINE_THREAD_POOL_HPP
-#define SEARCH_ENGINE_THREAD_POOL_HPP
+#pragma once
 
 #include "taskQueue.hpp"
 #include <cstddef>
@@ -56,5 +55,3 @@ private:
     // 存储所有子线程的同步缓存
     vector<Cache *> _subcachesSY;
 };
-
-#endif

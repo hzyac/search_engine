@@ -1,6 +1,5 @@
 // WebPage.hpp
-#ifndef SEARCH_ENGINE_WEB_PAGE_HPP
-#define SEARCH_ENGINE_WEB_PAGE_HPP
+#pragma once
 
 #include "simhash/Simhasher.hpp"
 #include <vector>
@@ -63,5 +62,3 @@ private:
     // 每个网页在网页库文件中的偏移位置和长度
     map<int, pair<size_t, size_t>> _newOffset;
 };
-
-#endif

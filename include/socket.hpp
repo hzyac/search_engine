@@ -1,6 +1,5 @@
 // Socket.hpp
-#ifndef SEARCH_ENGINE_SOCKET_HPP
-#define SEARCH_ENGINE_SOCKET_HPP
+#pragma once
 
 #include "nonCopyable.hpp"
 
@@ -22,5 +21,3 @@ public:
 private:
     int _fd;
 };
-
-#endif

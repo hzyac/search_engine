@@ -1,6 +1,5 @@
 // TcpServer.hpp
-#ifndef SEARCH_ENGINE_TCP_SERVER_HPP
-#define SEARCH_ENGINE_TCP_SERVER_HPP
+#pragma once
 
 #include "acceptor.hpp"
 #include "eventLoop.hpp"
@@ -30,5 +29,3 @@ private:
     Acceptor _acceptor;
     EventLoop _loop;
 };
-
-#endif

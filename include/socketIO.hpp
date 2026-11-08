@@ -1,6 +1,5 @@
 // SocketIO.hpp
-#ifndef SEARCH_ENGINE_SOCKET_IO_HPP
-#define SEARCH_ENGINE_SOCKET_IO_HPP
+#pragma once
 
 class SocketIO {
 public: 
@@ -18,5 +17,3 @@ public:
 private:
     int _fd;
 };
-
-#endif

@@ -1,6 +1,5 @@
 // eventloop.hpp
-#ifndef SEARCH_ENGINE_EVENT_LOOP_HPP
-#define SEARCH_ENGINE_EVENT_LOOP_HPP
+#pragma once
 
 #include <memory>
 #include <functional>
@@ -93,5 +92,3 @@ private:
     // 对_pending互斥访问
     mutex _mutex;
 };
-
-#endif

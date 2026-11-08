@@ -1,6 +1,5 @@
 // SplitToolCppJieba.hpp
-#ifndef SEARCH_ENGINE_SPLIT_TOOL_CPPJIEBA_HPP
-#define SEARCH_ENGINE_SPLIT_TOOL_CPPJIEBA_HPP
+#pragma once
 
 #include "splitTool.hpp"
 #include "../cppjieba/Jieba.hpp"
@@ -16,5 +15,3 @@ public:
 private:
     cppjieba::Jieba _jieba;
 };
-
-#endif

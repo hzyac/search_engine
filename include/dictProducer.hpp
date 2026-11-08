@@ -1,6 +1,5 @@
 // dictProducer.hpp
-#ifndef SEARCH_ENGINE_DICT_PRODUCER_HPP
-#define SEARCH_ENGINE_DICT_PRODUCER_HPP
+#pragma once
 
 #include <vector>
 #include <string>
@@ -55,5 +54,3 @@ private:
     // 词典索引
     map<string, set<int>> _index;
 };
-
-#endif

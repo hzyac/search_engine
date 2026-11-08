@@ -1,6 +1,5 @@
 // TaskQueue.hpp
-#ifndef SEARCH_ENGINE_TASK_QUEUE_HPP
-#define SEARCH_ENGINE_TASK_QUEUE_HPP
+#pragma once
 
 #include<queue>
 #include<functional>
@@ -51,5 +50,3 @@ private:
     // 标志这个队列是否结束任务
     bool _flag; 
 };
-
-#endif
