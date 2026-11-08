@@ -1,0 +1,16 @@
+/.deps/
+/.build/
+/bin/
+/data/
+/test/client
+/test/server
+/test/createDictionary
+/test/createWebpage
+/test/createInvertedIndex
+/test/cppjieba_test
+/test/test_simhash
+/test/fenci_test
+/test/dependencies_test
+/test/*.log
+/test/dict/
+/test/simhash_dict/

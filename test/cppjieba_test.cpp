@@ -1,12 +1,13 @@
-#include "cppjieba/Jieba.hpp"
+#include <cppjieba/Jieba.hpp>
+#include "../include/dependencyPaths.hpp"
 
 using namespace std;
 
-const char* const DICT_PATH = "./dict/jieba.dict.utf8";
-const char* const HMM_PATH = "./dict/hmm_model.utf8";
-const char* const USER_DICT_PATH = "./dict/user.dict.utf8";
-const char* const IDF_PATH = "./dict/idf.utf8";
-const char* const STOP_WORD_PATH = "./dict/stop_words.utf8";
+const string DICT_PATH = search_engine::dictPath("jieba.dict.utf8");
+const string HMM_PATH = search_engine::dictPath("hmm_model.utf8");
+const string USER_DICT_PATH = search_engine::dictPath("user.dict.utf8");
+const string IDF_PATH = search_engine::dictPath("idf.utf8");
+const string STOP_WORD_PATH = search_engine::dictPath("stop_words.utf8");
 
 int main(int argc, char** argv) 
 {

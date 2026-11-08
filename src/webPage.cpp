@@ -1,5 +1,6 @@
 // WebPage.cpp
 #include "../include/webPage.hpp"
+#include "../include/dependencyPaths.hpp"
 #include <cstdint>
 #include <cstring>
 #include <dirent.h>
@@ -19,10 +20,10 @@ using std::regex;
 // 存放网页库的文件夹
 WebPage::WebPage(const string &dirPath)
 : _docId(0)
-, _simhasher("../include/simhash_dict/jieba.dict.utf8",   
-             "../include/simhash_dict/hmm_model.utf8",    
-             "../include/simhash_dict/idf.utf8",          
-             "../include/simhash_dict/stop_words.utf8")
+, _simhasher(search_engine::dictPath("jieba.dict.utf8"),
+             search_engine::dictPath("hmm_model.utf8"),
+             search_engine::dictPath("idf.utf8"),
+             search_engine::dictPath("stop_words.utf8"))
 {
     saveFiles(dirPath);
 }
@@ -185,7 +186,8 @@ void WebPage::storeOffsetPage(const string &filePath)
 // 清洗字符串两端的空格
 void WebPage::trim(string &s)
 {
-    regex fullWidthSpace(u8"\u3000");
+    // U+3000 的 UTF-8 字节；std::regex 使用 char 字符串。
+    regex fullWidthSpace("\xE3\x80\x80");
     s = regex_replace(s, fullWidthSpace, " ");
 
     auto start = s.begin();

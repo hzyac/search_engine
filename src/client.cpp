@@ -7,7 +7,7 @@
 #include <cstring>
 #include <exception>
 #include <iostream>
-#include "../include/nlohmann/json.hpp"
+#include <nlohmann/json.hpp>
 
 #define MAXLINE 4096
 

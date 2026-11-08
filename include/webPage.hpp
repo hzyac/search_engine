@@ -1,7 +1,7 @@
 // WebPage.hpp
 #pragma once
 
-#include "simhash/Simhasher.hpp"
+#include <simhash/Simhasher.hpp>
 #include <vector>
 #include <map>
 #include <string>

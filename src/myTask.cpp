@@ -1,6 +1,6 @@
 // MyTask.cpp
 #include "../include/myTask.hpp"
-#include "../include/nlohmann/json.hpp"
+#include <nlohmann/json.hpp>
 #include "../include/splitToolCppJieba.hpp"
 #include "../include/cache.hpp"
 #include <exception>

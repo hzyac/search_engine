@@ -2,7 +2,7 @@
 #pragma once
 
 #include "splitTool.hpp"
-#include "../cppjieba/Jieba.hpp"
+#include <cppjieba/Jieba.hpp>
 
 class SplitToolCppJieba
 : public SplitTool

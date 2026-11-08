@@ -1,18 +1,19 @@
 #include <iostream>
 
-//this define can avoid some logs which you don't need to care about.
-#define LOGGER_LEVEL LL_WARN 
+// Suppress informational logs from the installed limonp version.
+#define LOGGING_LEVEL limonp::LL_WARNING
 
-#include "simhash/Simhasher.hpp"
+#include <simhash/Simhasher.hpp>
+#include "../include/dependencyPaths.hpp"
 using namespace simhash;
 
 int main(int argc, char** argv)
 {
     // 初始化 simhash
-    Simhasher simhasher("./simhash_dict/jieba.dict.utf8", 
-                        "./simhash_dict/hmm_model.utf8", 
-                        "./simhash_dict/idf.utf8", 
-                        "./simhash_dict/stop_words.utf8");
+    Simhasher simhasher(search_engine::dictPath("jieba.dict.utf8"),
+                        search_engine::dictPath("hmm_model.utf8"),
+                        search_engine::dictPath("idf.utf8"),
+                        search_engine::dictPath("stop_words.utf8"));
 
     string s1("CSDN的文章: 我是蓝翔技工拖拉机学院手扶拖拉机专业的。不用多久，我就会升职加薪，当上总经理，出任CEO，走上人生巅峰。");
     uint64_t u1;       // 指纹1
